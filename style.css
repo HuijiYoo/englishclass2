@@ -1,0 +1,165 @@
+/* 전체적인 폰트와 배경 설정 */
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    background-color: #eaf2f8; /* 부드러운 하늘색 배경 */
+    color: #2c3e50; /* 가독성을 위한 어두운 텍스트 색상 */
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+}
+
+/* 전체 콘텐츠를 감싸는 컨테이너 */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+}
+
+/* 헤더 스타일 */
+header {
+    background: linear-gradient(135deg, #85c1e9, #3498db); /* 화사한 하늘색 그라데이션 */
+    color: white;
+    padding: 30px 40px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+header .subtitle {
+    margin: 10px 0 0;
+    opacity: 0.9;
+    font-weight: 400;
+}
+
+/* 메인 콘텐츠 영역 */
+main {
+    padding: 20px 40px;
+}
+
+/* 각 차시별 섹션 스타일 */
+.lesson-session {
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #d6eaf8;
+}
+
+.lesson-session:last-child {
+    border-bottom: none;
+}
+
+.lesson-session h2 {
+    font-size: 1.6em;
+    color: #2980b9; /* 포인트 파란색 */
+    border-left: 4px solid #3498db; /* 헤더와 통일감 있는 파란색 */
+    padding-left: 12px;
+    margin-bottom: 20px;
+}
+
+/* 파인만 기법 하이라이트 카드 */
+.lesson-highlight {
+    background-color: #e8f8f5; /* 밝은 민트색 배경 */
+    border: 1px solid #a3e4d7;
+    border-left: 5px solid #48c9b0; /* 산뜻한 민트색 테두리 */
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.lesson-highlight h3 {
+    margin-top: 0;
+    color: #138d75; /* 짙은 민트색 텍스트 */
+}
+
+/* 활동 카드 스타일 */
+.activity-card {
+    background-color: #f4f6f7;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #e5e8e8;
+    transition: box-shadow 0.3s ease;
+}
+
+.activity-card:hover {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.activity-card h3 {
+    margin-top: 0;
+    font-size: 1.2em;
+    color: #2c3e50;
+}
+
+/* 토글 버튼 스타일 */
+.toggle-btn {
+    background-color: #3498db; /* 메인 파란색 */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 700;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.toggle-btn:hover {
+    background-color: #2980b9; /* 호버 시 약간 더 어둡게 */
+}
+
+/* 토글되어 나타나는 콘텐츠 스타일 */
+.toggle-content {
+    display: none; /* 기본적으로 숨김 */
+    margin-top: 15px;
+    padding: 15px;
+    background-color: #eaf2f8; /* 전체 배경색과 동일하게 */
+    border-radius: 8px;
+    border: 1px solid #d6eaf8;
+}
+
+.toggle-content ul {
+    padding-left: 20px;
+    margin: 0;
+}
+
+.toggle-content li {
+    margin-bottom: 8px;
+}
+
+/* 풋터 스타일 */
+footer {
+    background-color: #34495e; /* 차분한 남색 */
+    color: #ecf0f1;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+}
+
+/* 모바일 반응형 스타일 */
+@media (max-width: 600px) {
+    body {
+        padding: 0;
+    }
+    .container {
+        border-radius: 0;
+    }
+    main {
+        padding: 15px 20px;
+    }
+    header {
+        padding: 20px;
+    }
+    header h1 {
+        font-size: 1.6em;
+    }
+    .lesson-session h2 {
+        font-size: 1.4em;
+    }
+}
